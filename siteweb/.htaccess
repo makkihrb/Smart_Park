@@ -1,0 +1,13 @@
+Options -MultiViews
+RewriteEngine on
+DirectoryIndex index.php #page par defaut
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+#Redrit trailing slashs if not a folder 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+ErrorDocument 404 /404.php
