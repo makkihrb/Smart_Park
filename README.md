@@ -46,7 +46,7 @@ By deploying the Smart-Park Solution, users can benefit from an optimized parkin
 Feel free to explore the project and reach out to us for any questions or feedback related to front-end development, back-end development, or any aspect of ReactJS.
 
 ## Project Contributors
-- Your Name
-- Houssem
+- Houssem Sakkal & Makki Harboub
+
 
 We are proud of the outcome of this project and the effective utilization of various technologies to create a smart parking solution.
